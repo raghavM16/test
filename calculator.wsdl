@@ -203,5 +203,10 @@
       <soap12:address location="http://localhost:8080/NewService" />
      </wsdl:port>
  </wsdl:service>
+<wsdl:service name="NewService12">
+     <wsdl:port name="NewPort" binding="tns:CalculatorSoap12">
+      <soap12:address location="http://localhost:8080/NewService" />
+     </wsdl:port>
+ </wsdl:service>
 
 </wsdl:definitions>

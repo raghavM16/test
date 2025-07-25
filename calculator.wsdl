@@ -194,17 +194,17 @@
     </wsdl:port>
   </wsdl:service>
   <wsdl:service name="NewService">
-     <wsdl:port name="NewPort" binding="tns:CalculatorSoap12">
+     <wsdl:port name="NewPort" binding="tns:CalculatorSoap">
       <soap12:address location="http://localhost:8080/NewService" />
      </wsdl:port>
  </wsdl:service>
  <wsdl:service name="NewService11">
-     <wsdl:port name="NewPort" binding="tns:CalculatorSoap12">
+     <wsdl:port name="NewPort" binding="tns:CalculatorSoap">
       <soap12:address location="http://localhost:8080/NewService" />
      </wsdl:port>
  </wsdl:service>
 <wsdl:service name="NewService12">
-     <wsdl:port name="NewPort" binding="tns:CalculatorSoap12">
+     <wsdl:port name="NewPort" binding="tns:CalculatorSoap">
       <soap12:address location="http://localhost:8080/NewService" />
      </wsdl:port>
  </wsdl:service>

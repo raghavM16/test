@@ -2,7 +2,7 @@
 <documentation> Release Status: Generally Available </documentation>
 <types>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-<xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="../../xsd/platform/v2025_1_0/core.xsd"/>
+<xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="core.xsd"/>
 <xsd:import namespace="urn:faults_2025_1.platform.webservices.netsuite.com" schemaLocation="../../xsd/platform/v2025_1_0/faults.xsd"/>
 <xsd:import namespace="urn:messages_2025_1.platform.webservices.netsuite.com" schemaLocation="../../xsd/platform/v2025_1_0/messages.xsd"/>
 <xsd:import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="../../xsd/platform/v2025_1_0/common.xsd"/>
@@ -2525,4 +2525,5 @@
 <soap:address location="https://webservices.netsuite.com/services/NetSuitePort_2025_1"/>
 </port>
 </service>
+
 </definitions>

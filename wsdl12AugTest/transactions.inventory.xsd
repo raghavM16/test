@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tranInvt="urn:inventory_2025_1.transactions.webservices.netsuite.com" xmlns:tranInvtTyp="urn:types.inventory_2025_1.transactions.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:inventory_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
-    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.core.xsd"/>
-    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.common.xsd"/>
-    <import namespace="urn:types.inventory_2025_1.transactions.webservices.netsuite.com" schemaLocation="../../../xsd/transactions.inventoryTypes.xsd"/>
-    <import namespace="urn:types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.commonTypes.xsd"/>
+    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <import namespace="urn:types.inventory_2025_1.transactions.webservices.netsuite.com" schemaLocation="transactions.inventoryTypes.xsd"/>
+    <import namespace="urn:types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
     <!-- inventoryAdjustment/start -->
     <element name="InventoryAdjustment" type="tranInvt:InventoryAdjustment"/>
     <complexType name="InventoryAdjustment">

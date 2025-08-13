@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:generalComm="urn:communication_2025_1.general.webservices.netsuite.com" xmlns:generalCommTyp="urn:types.communication_2025_1.general.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:docFileCab="urn:filecabinet_2025_1.documents.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:communication_2025_1.general.webservices.netsuite.com" elementFormDefault="qualified">
-    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.core.xsd"/>
-    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.common.xsd"/>
-    <import namespace="urn:types.communication_2025_1.general.webservices.netsuite.com" schemaLocation="../../../xsd/general.communicationTypes.xsd"/>
-    <import namespace="urn:filecabinet_2025_1.documents.webservices.netsuite.com" schemaLocation="../../../xsd/documents.fileCabinet.xsd"/>
+    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <import namespace="urn:types.communication_2025_1.general.webservices.netsuite.com" schemaLocation="general.communicationTypes.xsd"/>
+    <import namespace="urn:filecabinet_2025_1.documents.webservices.netsuite.com" schemaLocation="documents.fileCabinet.xsd"/>
     <!-- note/start -->
     <element name="Note" type="generalComm:Note"/>
     <complexType name="Note">

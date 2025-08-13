@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:platformFaults="urn:faults_2025_1.platform.webservices.netsuite.com" xmlns:platformFaultTyp="urn:types.faults_2025_1.platform.webservices.netsuite.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:faults_2025_1.platform.webservices.netsuite.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <import namespace="urn:types.faults_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.faultTypes.xsd"/>
+    <import namespace="urn:types.faults_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.faultTypes.xsd"/>
     <complexType name="SoapFault">
         <sequence>
             <element name="code" type="platformFaultTyp:FaultCodeType"/>

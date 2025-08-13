@@ -5,7 +5,7 @@
 	</documentation>
 	<types>
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-			<xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="file:///C:/Users/r.madhava.murthy/project/wsdlrepo/test/wsdl12AugTest/platform.core.xsd"/>
+			<xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
 			<xsd:import namespace="urn:faults_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.faults.xsd"/>
 			<xsd:import namespace="urn:messages_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.messages.xsd"/>
 			<xsd:import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>

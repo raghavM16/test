@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tranBank="urn:bank_2025_1.transactions.webservices.netsuite.com" xmlns:tranBankTyp="urn:types.bank_2025_1.transactions.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:bank_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
-    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.core.xsd"/>
-    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.common.xsd"/>
-    <import namespace="urn:types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.commonTypes.xsd"/>
-    <import namespace="urn:types.bank_2025_1.transactions.webservices.netsuite.com" schemaLocation="../../../xsd/transactions.bankTypes.xsd"/>
+    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <import namespace="urn:types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
+    <import namespace="urn:types.bank_2025_1.transactions.webservices.netsuite.com" schemaLocation="transactions.bankTypes.xsd"/>
     <complexType name="CheckLandedCostList">
         <sequence>
             <element name="landedCost" type="platformCommon:LandedCostSummary" minOccurs="0" maxOccurs="unbounded"/>

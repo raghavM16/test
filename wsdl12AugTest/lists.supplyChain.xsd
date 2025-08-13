@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:listScm="urn:supplychain_2025_1.lists.webservices.netsuite.com" xmlns:listScmTyp="urn:types.supplychain_2025_1.lists.webservices.netsuite.com" targetNamespace="urn:supplychain_2025_1.lists.webservices.netsuite.com" elementFormDefault="qualified">
-    <xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.core.xsd"/>
-    <xsd:import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="../../../xsd/platform.common.xsd"/>
-    <xsd:import namespace="urn:types.supplychain_2025_1.lists.webservices.netsuite.com" schemaLocation="../../../xsd/lists.supplyChainTypes.xsd"/>
+    <xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <xsd:import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <xsd:import namespace="urn:types.supplychain_2025_1.lists.webservices.netsuite.com" schemaLocation="lists.supplyChainTypes.xsd"/>
     <!-- manufacturingCostTemplate/start -->
     <element name="manufacturingCostTemplate" type="listScm:ManufacturingCostTemplate"/>
     <complexType name="ManufacturingCostTemplate">

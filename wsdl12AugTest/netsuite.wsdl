@@ -40,7 +40,7 @@
 			<xsd:import namespace="urn:marketing_2025_1.lists.webservices.netsuite.com" schemaLocation="marketing.xsd"/>
 			<xsd:import namespace="urn:types.marketing_2025_1.lists.webservices.netsuite.com" schemaLocation="marketingTypes.xsd"/>
 			<xsd:import namespace="urn:demandplanning_2025_1.transactions.webservices.netsuite.com" schemaLocation="demandPlanning.xsd"/>
-			<xsd:import namespace="urn:types.demandplanning_2025_1.transactions.webservices.netsuite.com" schemaLocation="transactions.demandPlanningTypes.xsd"/>
+			<xsd:import namespace="urn:types.demandplanning_2025_1.transactions.webservices.netsuite.com" schemaLocation="demandPlanningTypes.xsd"/>
 			<xsd:import namespace="urn:supplychain_2025_1.lists.webservices.netsuite.com" schemaLocation="supplyChain.xsd"/>
 			<xsd:import namespace="urn:types.supplychain_2025_1.lists.webservices.netsuite.com" schemaLocation="supplyChainTypes.xsd"/>
 		</xsd:schema>

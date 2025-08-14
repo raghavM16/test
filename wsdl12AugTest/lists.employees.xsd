@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" xmlns:listEmpTyp="urn:types.employees_2025_1.lists.webservices.netsuite.com" xmlns:listEmp="urn:employees_2025_1.lists.webservices.netsuite.com" targetNamespace="urn:employees_2025_1.lists.webservices.netsuite.com" elementFormDefault="qualified">
-    <xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
-    <xsd:import namespace="urn:types.employees_2025_1.lists.webservices.netsuite.com" schemaLocation="lists.employeeTypes.xsd"/>
-    <xsd:import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
-    <xsd:import namespace="urn:types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCoreTyp="http://types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCore="http://core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="http://common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="http://types.common_2025_1.platform.webservices.netsuite.com" xmlns:listEmpTyp="http://types.employees_2025_1.lists.webservices.netsuite.com" xmlns:listEmp="http://employees_2025_1.lists.webservices.netsuite.com" targetNamespace="http://employees_2025_1.lists.webservices.netsuite.com" elementFormDefault="qualified">
+    <xsd:import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <xsd:import namespace="http://types.employees_2025_1.lists.webservices.netsuite.com" schemaLocation="lists.employeeTypes.xsd"/>
+    <xsd:import namespace="http://common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <xsd:import namespace="http://types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
     <!-- employee/start -->
     <element name="Employee" type="listEmp:Employee"/>
     <complexType name="Employee">

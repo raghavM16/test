@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" targetNamespace="urn:common_2025_1.platform.webservices.netsuite.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <xsd:import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
-    <xsd:import namespace="urn:types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCore="http://core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="http://types.common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="http://common_2025_1.platform.webservices.netsuite.com" targetNamespace="http://common_2025_1.platform.webservices.netsuite.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xsd:import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <xsd:import namespace="http://types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
     <!-- Address/start -->
     <complexType name="Address">
         <complexContent>

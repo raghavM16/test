@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformFaultTyp="urn:types.faults_2025_1.platform.webservices.netsuite.com" targetNamespace="urn:core_2025_1.platform.webservices.netsuite.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <import namespace="urn:types.core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.coreTypes.xsd"/>
-    <import namespace="urn:types.faults_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.faultTypes.xsd"/>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCore="http://core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="http://types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformFaultTyp="http://types.faults_2025_1.platform.webservices.netsuite.com" targetNamespace="http://core_2025_1.platform.webservices.netsuite.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <import namespace="http://types.core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.coreTypes.xsd"/>
+    <import namespace="http://types.faults_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.faultTypes.xsd"/>
     <!-- TBA Credentials -->
     <complexType name="TokenPassportSignature">
         <simpleContent>

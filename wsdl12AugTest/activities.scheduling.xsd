@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:actSched="urn:scheduling_2025_1.activities.webservices.netsuite.com" xmlns:actSchedTyp="urn:types.scheduling_2025_1.activities.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:scheduling_2025_1.activities.webservices.netsuite.com" elementFormDefault="qualified">
-    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
-    <import namespace="urn:types.core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.coreTypes.xsd"/>
-    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
-    <import namespace="urn:types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
-    <import namespace="urn:types.scheduling_2025_1.activities.webservices.netsuite.com" schemaLocation="activities.schedulingTypes.xsd"/>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:actSched="http://scheduling_2025_1.activities.webservices.netsuite.com" xmlns:actSchedTyp="http://types.scheduling_2025_1.activities.webservices.netsuite.com" xmlns:platformCore="http://core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="http://types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="http://common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="http://types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://scheduling_2025_1.activities.webservices.netsuite.com" elementFormDefault="qualified">
+    <import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <import namespace="http://types.core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.coreTypes.xsd"/>
+    <import namespace="http://common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <import namespace="http://types.common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.commonTypes.xsd"/>
+    <import namespace="http://types.scheduling_2025_1.activities.webservices.netsuite.com" schemaLocation="activities.schedulingTypes.xsd"/>
     <!-- calendarEvent/start -->
     <element name="CalendarEvent" type="actSched:CalendarEvent"/>
     <complexType name="CalendarEvent">

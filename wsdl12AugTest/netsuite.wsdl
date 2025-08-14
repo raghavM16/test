@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns:tns="http://platform_2025_1.webservices.netsuite.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:platformMsgs="http://messages_2025_1.platform.webservices.netsuite.com" xmlns:platformFaults=http://faults_2025_1.platform.webservices.netsuite.com" targetNamespace="http://platform_2025_1.webservices.netsuite.com">
+<definitions xmlns:tns="http://platform_2025_1.webservices.netsuite.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:platformMsgs="http://messages_2025_1.platform.webservices.netsuite.com" xmlns:platformFaults="http://faults_2025_1.platform.webservices.netsuite.com" targetNamespace="http://platform_2025_1.webservices.netsuite.com">
 	<documentation>
 		Release Status: Generally Available
 	</documentation>

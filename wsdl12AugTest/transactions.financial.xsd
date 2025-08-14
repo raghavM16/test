@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tranFin="urn:financial_2025_1.transactions.webservices.netsuite.com" xmlns:tranFinTyp="urn:types.financial_2025_1.transactions.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:financial_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
-    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
-    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
-    <import namespace="urn:types.financial_2025_1.transactions.webservices.netsuite.com" schemaLocation="transactions.financialTypes.xsd"/>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tranFin="http://financial_2025_1.transactions.webservices.netsuite.com" xmlns:tranFinTyp="http://types.financial_2025_1.transactions.webservices.netsuite.com" xmlns:platformCore="http://core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="http://types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="http://common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="http://types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://financial_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
+    <import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <import namespace="http://common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <import namespace="http://types.financial_2025_1.transactions.webservices.netsuite.com" schemaLocation="transactions.financialTypes.xsd"/>
     <element name="budget" type="tranFin:Budget"/>
     <complexType name="Budget">
         <complexContent>

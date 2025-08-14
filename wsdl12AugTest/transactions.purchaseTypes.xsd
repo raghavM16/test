@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tranPurchTyp="urn:types.purchases_2025_1.transactions.webservices.netsuite.com" targetNamespace="urn:types.purchases_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tranPurchTyp="http://types.purchases_2025_1.transactions.webservices.netsuite.com" targetNamespace="http://types.purchases_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
     <simpleType name="PurchaseOrderOrderStatus">
         <restriction base="xsd:string">
             <enumeration value="_closed"/>

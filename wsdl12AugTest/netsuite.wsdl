@@ -5,7 +5,7 @@
 	</documentation>
 	<types>
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-			<xsd:import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+			<xs:import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
 			<xsd:import namespace="http://faults_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.faults.xsd"/>
 			<xsd:import namespace="http://messages_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.messages.xsd"/>
 			<xsd:import namespace="http://common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:demandPlanning="urn:demandplanning_2025_1.transactions.webservices.netsuite.com" xmlns:demandPlanningTyp="urn:types.demandplanning_2025_1.transactions.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" targetNamespace="urn:demandplanning_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
-    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
-    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
-    <import namespace="urn:types.demandplanning_2025_1.transactions.webservices.netsuite.com" schemaLocation="transactions.demandPlanningTypes.xsd"/>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:demandPlanning="http://demandplanning_2025_1.transactions.webservices.netsuite.com" xmlns:demandPlanningTyp="http://types.demandplanning_2025_1.transactions.webservices.netsuite.com" xmlns:platformCore="http://core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="http://common_2025_1.platform.webservices.netsuite.com" targetNamespace="http://demandplanning_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
+    <import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <import namespace="http://common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <import namespace="http://types.demandplanning_2025_1.transactions.webservices.netsuite.com" schemaLocation="transactions.demandPlanningTypes.xsd"/>
     <element name="itemDemandPlan" type="demandPlanning:ItemDemandPlan"/>
     <complexType name="ItemDemandPlan">
         <complexContent>

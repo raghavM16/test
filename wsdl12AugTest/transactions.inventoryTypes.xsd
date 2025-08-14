@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tranInvtTyp="urn:types.inventory_2025_1.transactions.webservices.netsuite.com" targetNamespace="urn:types.inventory_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tranInvtTyp="http://types.inventory_2025_1.transactions.webservices.netsuite.com" targetNamespace="http://types.inventory_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
     <!-- inventoryAdjustment constants/start -->
     <!-- inventoryAdjustment constants/end -->
     <simpleType name="TransferOrderItemCommitInventory">

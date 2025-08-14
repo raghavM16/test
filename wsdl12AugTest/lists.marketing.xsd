@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:listMkt="urn:marketing_2025_1.lists.webservices.netsuite.com" xmlns:listMktTyp="urn:types.marketing_2025_1.lists.webservices.netsuite.com" xmlns:platformCore="urn:core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="urn:types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="urn:common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:marketing_2025_1.lists.webservices.netsuite.com" elementFormDefault="qualified">
-    <import namespace="urn:core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
-    <import namespace="urn:common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
-    <import namespace="urn:types.marketing_2025_1.lists.webservices.netsuite.com" schemaLocation="lists.marketingTypes.xsd"/>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:listMkt="http://marketing_2025_1.lists.webservices.netsuite.com" xmlns:listMktTyp="http://types.marketing_2025_1.lists.webservices.netsuite.com" xmlns:platformCore="http://core_2025_1.platform.webservices.netsuite.com" xmlns:platformCoreTyp="http://types.core_2025_1.platform.webservices.netsuite.com" xmlns:platformCommon="http://common_2025_1.platform.webservices.netsuite.com" xmlns:platformCommonTyp="http://types.common_2025_1.platform.webservices.netsuite.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://marketing_2025_1.lists.webservices.netsuite.com" elementFormDefault="qualified">
+    <import namespace="http://core_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.core.xsd"/>
+    <import namespace="http://common_2025_1.platform.webservices.netsuite.com" schemaLocation="platform.common.xsd"/>
+    <import namespace="http://types.marketing_2025_1.lists.webservices.netsuite.com" schemaLocation="lists.marketingTypes.xsd"/>
     <!-- campaign/start -->
     <element name="Campaign" type="listMkt:Campaign"/>
     <complexType name="Campaign">

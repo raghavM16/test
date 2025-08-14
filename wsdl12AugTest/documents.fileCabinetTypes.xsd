@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:docFileCabTyp="urn:types.filecabinet_2025_1.documents.webservices.netsuite.com" targetNamespace="urn:types.filecabinet_2025_1.documents.webservices.netsuite.com" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:docFileCabTyp="http://types.filecabinet_2025_1.documents.webservices.netsuite.com" targetNamespace="http://types.filecabinet_2025_1.documents.webservices.netsuite.com" elementFormDefault="qualified">
     <!-- file constants/start -->
     <simpleType name="MediaType">
         <restriction base="xsd:string">

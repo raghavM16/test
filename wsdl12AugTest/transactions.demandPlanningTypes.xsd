@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:demandPlanningTyp="urn:types.demandplanning_2025_1.transactions.webservices.netsuite.com" targetNamespace="urn:types.demandplanning_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:demandPlanningTyp="http://types.demandplanning_2025_1.transactions.webservices.netsuite.com" targetNamespace="http://types.demandplanning_2025_1.transactions.webservices.netsuite.com" elementFormDefault="qualified">
     <simpleType name="DemandPlanCalendarType">
         <restriction base="xsd:string">
             <enumeration value="_daily"/>

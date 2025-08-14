@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCommonTyp="urn:types.common_2025_1.platform.webservices.netsuite.com" targetNamespace="urn:types.common_2025_1.platform.webservices.netsuite.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:platformCommonTyp="http://types.common_2025_1.platform.webservices.netsuite.com" targetNamespace="http://types.common_2025_1.platform.webservices.netsuite.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <!-- Country constants/start -->
     <simpleType name="Country">
         <restriction base="xsd:string">

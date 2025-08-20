@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/schema/updateshipment/response"
+           xmlns="http://example.com/schema/updateshipment/response"
+           xmlns:common="http://example.com/schema/common"
+           elementFormDefault="qualified">
+  <xs:complexType name="UpdateShipmentResponse">
+    <xs:sequence>
+      <xs:element name="Result" type="xs:string"/>
+      <xs:element name="Status" type="common:ResponseStatus"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

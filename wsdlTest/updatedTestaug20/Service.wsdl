@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:tns="http://example.com/wsdl/TestService"
+             targetNamespace="http://example.com/wsdl/TestService"
+             xmlns:getcustomerreq="http://example.com/schema/getcustomer/request"
+xmlns:getcustomerres="http://example.com/schema/getcustomer/response"
+xmlns:createcustomerreq="http://example.com/schema/createcustomer/request"
+xmlns:createcustomerres="http://example.com/schema/createcustomer/response"
+xmlns:updatecustomerreq="http://example.com/schema/updatecustomer/request"
+xmlns:updatecustomerres="http://example.com/schema/updatecustomer/response"
+xmlns:deletecustomerreq="http://example.com/schema/deletecustomer/request"
+xmlns:deletecustomerres="http://example.com/schema/deletecustomer/response"
+xmlns:searchcustomersreq="http://example.com/schema/searchcustomers/request"
+xmlns:searchcustomersres="http://example.com/schema/searchcustomers/response"
+xmlns:getorderreq="http://example.com/schema/getorder/request"
+xmlns:getorderres="http://example.com/schema/getorder/response"
+xmlns:createorderreq="http://example.com/schema/createorder/request"
+xmlns:createorderres="http://example.com/schema/createorder/response"
+xmlns:updateorderreq="http://example.com/schema/updateorder/request"
+xmlns:updateorderres="http://example.com/schema/updateorder/response"
+xmlns:cancelorderreq="http://example.com/schema/cancelorder/request"
+xmlns:cancelorderres="http://example.com/schema/cancelorder/response"
+xmlns:listordersreq="http://example.com/schema/listorders/request"
+xmlns:listordersres="http://example.com/schema/listorders/response"
+xmlns:processpaymentreq="http://example.com/schema/processpayment/request"
+xmlns:processpaymentres="http://example.com/schema/processpayment/response"
+xmlns:refundpaymentreq="http://example.com/schema/refundpayment/request"
+xmlns:refundpaymentres="http://example.com/schema/refundpayment/response"
+xmlns:getinvoicereq="http://example.com/schema/getinvoice/request"
+xmlns:getinvoiceres="http://example.com/schema/getinvoice/response"
+xmlns:generateinvoicereq="http://example.com/schema/generateinvoice/request"
+xmlns:generateinvoiceres="http://example.com/schema/generateinvoice/response"
+xmlns:trackshipmentreq="http://example.com/schema/trackshipment/request"
+xmlns:trackshipmentres="http://example.com/schema/trackshipment/response"
+xmlns:scheduleshipmentreq="http://example.com/schema/scheduleshipment/request"
+xmlns:scheduleshipmentres="http://example.com/schema/scheduleshipment/response"
+xmlns:updateshipmentreq="http://example.com/schema/updateshipment/request"
+xmlns:updateshipmentres="http://example.com/schema/updateshipment/response"
+xmlns:cancelshipmentreq="http://example.com/schema/cancelshipment/request"
+xmlns:cancelshipmentres="http://example.com/schema/cancelshipment/response">
+
+  <types>
+    <xsd:schema>
+           <xsd:import namespace="http://example.com/schema/getcustomer/request" schemaLocation="GetCustomerRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/getcustomer/response" schemaLocation="GetCustomerResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/createcustomer/request" schemaLocation="CreateCustomerRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/createcustomer/response" schemaLocation="CreateCustomerResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/updatecustomer/request" schemaLocation="UpdateCustomerRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/updatecustomer/response" schemaLocation="UpdateCustomerResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/deletecustomer/request" schemaLocation="DeleteCustomerRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/deletecustomer/response" schemaLocation="DeleteCustomerResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/searchcustomers/request" schemaLocation="SearchCustomersRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/searchcustomers/response" schemaLocation="SearchCustomersResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/getorder/request" schemaLocation="GetOrderRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/getorder/response" schemaLocation="GetOrderResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/createorder/request" schemaLocation="CreateOrderRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/createorder/response" schemaLocation="CreateOrderResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/updateorder/request" schemaLocation="UpdateOrderRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/updateorder/response" schemaLocation="UpdateOrderResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/cancelorder/request" schemaLocation="CancelOrderRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/cancelorder/response" schemaLocation="CancelOrderResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/listorders/request" schemaLocation="ListOrdersRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/listorders/response" schemaLocation="ListOrdersResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/processpayment/request" schemaLocation="ProcessPaymentRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/processpayment/response" schemaLocation="ProcessPaymentResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/refundpayment/request" schemaLocation="RefundPaymentRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/refundpayment/response" schemaLocation="RefundPaymentResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/getinvoice/request" schemaLocation="GetInvoiceRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/getinvoice/response" schemaLocation="GetInvoiceResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/generateinvoice/request" schemaLocation="GenerateInvoiceRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/generateinvoice/response" schemaLocation="GenerateInvoiceResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/trackshipment/request" schemaLocation="TrackShipmentRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/trackshipment/response" schemaLocation="TrackShipmentResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/scheduleshipment/request" schemaLocation="ScheduleShipmentRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/scheduleshipment/response" schemaLocation="ScheduleShipmentResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/updateshipment/request" schemaLocation="UpdateShipmentRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/updateshipment/response" schemaLocation="UpdateShipmentResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/cancelshipment/request" schemaLocation="CancelShipmentRequestTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/cancelshipment/response" schemaLocation="CancelShipmentResponseTypes.xsd"/>
+           <xsd:import namespace="http://example.com/schema/common" schemaLocation="CommonTypes.xsd"/>
+    </xsd:schema>
+  </types>
+
+  <message name="GetCustomerRequest">
+    <part name="parameters" element="getcustomerreq:GetCustomerRequest"/>
+  </message>
+  <message name="GetCustomerResponse">
+    <part name="parameters" element="getcustomerres:GetCustomerResponse"/>
+  </message>
+  <message name="CreateCustomerRequest">
+    <part name="parameters" element="createcustomerreq:CreateCustomerRequest"/>
+  </message>
+  <message name="CreateCustomerResponse">
+    <part name="parameters" element="createcustomerres:CreateCustomerResponse"/>
+  </message>
+  <message name="UpdateCustomerRequest">
+    <part name="parameters" element="updatecustomerreq:UpdateCustomerRequest"/>
+  </message>
+  <message name="UpdateCustomerResponse">
+    <part name="parameters" element="updatecustomerres:UpdateCustomerResponse"/>
+  </message>
+  <message name="DeleteCustomerRequest">
+    <part name="parameters" element="deletecustomerreq:DeleteCustomerRequest"/>
+  </message>
+  <message name="DeleteCustomerResponse">
+    <part name="parameters" element="deletecustomerres:DeleteCustomerResponse"/>
+  </message>
+  <message name="SearchCustomersRequest">
+    <part name="parameters" element="searchcustomersreq:SearchCustomersRequest"/>
+  </message>
+  <message name="SearchCustomersResponse">
+    <part name="parameters" element="searchcustomersres:SearchCustomersResponse"/>
+  </message>
+  <message name="GetOrderRequest">
+    <part name="parameters" element="getorderreq:GetOrderRequest"/>
+  </message>
+  <message name="GetOrderResponse">
+    <part name="parameters" element="getorderres:GetOrderResponse"/>
+  </message>
+  <message name="CreateOrderRequest">
+    <part name="parameters" element="createorderreq:CreateOrderRequest"/>
+  </message>
+  <message name="CreateOrderResponse">
+    <part name="parameters" element="createorderres:CreateOrderResponse"/>
+  </message>
+  <message name="UpdateOrderRequest">
+    <part name="parameters" element="updateorderreq:UpdateOrderRequest"/>
+  </message>
+  <message name="UpdateOrderResponse">
+    <part name="parameters" element="updateorderres:UpdateOrderResponse"/>
+  </message>
+  <message name="CancelOrderRequest">
+    <part name="parameters" element="cancelorderreq:CancelOrderRequest"/>
+  </message>
+  <message name="CancelOrderResponse">
+    <part name="parameters" element="cancelorderres:CancelOrderResponse"/>
+  </message>
+  <message name="ListOrdersRequest">
+    <part name="parameters" element="listordersreq:ListOrdersRequest"/>
+  </message>
+  <message name="ListOrdersResponse">
+    <part name="parameters" element="listordersres:ListOrdersResponse"/>
+  </message>
+  <message name="ProcessPaymentRequest">
+    <part name="parameters" element="processpaymentreq:ProcessPaymentRequest"/>
+  </message>
+  <message name="ProcessPaymentResponse">
+    <part name="parameters" element="processpaymentres:ProcessPaymentResponse"/>
+  </message>
+  <message name="RefundPaymentRequest">
+    <part name="parameters" element="refundpaymentreq:RefundPaymentRequest"/>
+  </message>
+  <message name="RefundPaymentResponse">
+    <part name="parameters" element="refundpaymentres:RefundPaymentResponse"/>
+  </message>
+  <message name="GetInvoiceRequest">
+    <part name="parameters" element="getinvoicereq:GetInvoiceRequest"/>
+  </message>
+  <message name="GetInvoiceResponse">
+    <part name="parameters" element="getinvoiceres:GetInvoiceResponse"/>
+  </message>
+  <message name="GenerateInvoiceRequest">
+    <part name="parameters" element="generateinvoicereq:GenerateInvoiceRequest"/>
+  </message>
+  <message name="GenerateInvoiceResponse">
+    <part name="parameters" element="generateinvoiceres:GenerateInvoiceResponse"/>
+  </message>
+  <message name="TrackShipmentRequest">
+    <part name="parameters" element="trackshipmentreq:TrackShipmentRequest"/>
+  </message>
+  <message name="TrackShipmentResponse">
+    <part name="parameters" element="trackshipmentres:TrackShipmentResponse"/>
+  </message>
+  <message name="ScheduleShipmentRequest">
+    <part name="parameters" element="scheduleshipmentreq:ScheduleShipmentRequest"/>
+  </message>
+  <message name="ScheduleShipmentResponse">
+    <part name="parameters" element="scheduleshipmentres:ScheduleShipmentResponse"/>
+  </message>
+  <message name="UpdateShipmentRequest">
+    <part name="parameters" element="updateshipmentreq:UpdateShipmentRequest"/>
+  </message>
+  <message name="UpdateShipmentResponse">
+    <part name="parameters" element="updateshipmentres:UpdateShipmentResponse"/>
+  </message>
+  <message name="CancelShipmentRequest">
+    <part name="parameters" element="cancelshipmentreq:CancelShipmentRequest"/>
+  </message>
+  <message name="CancelShipmentResponse">
+    <part name="parameters" element="cancelshipmentres:CancelShipmentResponse"/>
+  </message>
+
+  <portType name="TestServicePortType">
+    <operation name="GetCustomer">
+      <input message="tns:GetCustomerRequest"/>
+      <output message="tns:GetCustomerResponse"/>
+    </operation>
+    <operation name="CreateCustomer">
+      <input message="tns:CreateCustomerRequest"/>
+      <output message="tns:CreateCustomerResponse"/>
+    </operation>
+    <operation name="UpdateCustomer">
+      <input message="tns:UpdateCustomerRequest"/>
+      <output message="tns:UpdateCustomerResponse"/>
+    </operation>
+    <operation name="DeleteCustomer">
+      <input message="tns:DeleteCustomerRequest"/>
+      <output message="tns:DeleteCustomerResponse"/>
+    </operation>
+    <operation name="SearchCustomers">
+      <input message="tns:SearchCustomersRequest"/>
+      <output message="tns:SearchCustomersResponse"/>
+    </operation>
+    <operation name="GetOrder">
+      <input message="tns:GetOrderRequest"/>
+      <output message="tns:GetOrderResponse"/>
+    </operation>
+    <operation name="CreateOrder">
+      <input message="tns:CreateOrderRequest"/>
+      <output message="tns:CreateOrderResponse"/>
+    </operation>
+    <operation name="UpdateOrder">
+      <input message="tns:UpdateOrderRequest"/>
+      <output message="tns:UpdateOrderResponse"/>
+    </operation>
+    <operation name="CancelOrder">
+      <input message="tns:CancelOrderRequest"/>
+      <output message="tns:CancelOrderResponse"/>
+    </operation>
+    <operation name="ListOrders">
+      <input message="tns:ListOrdersRequest"/>
+      <output message="tns:ListOrdersResponse"/>
+    </operation>
+    <operation name="ProcessPayment">
+      <input message="tns:ProcessPaymentRequest"/>
+      <output message="tns:ProcessPaymentResponse"/>
+    </operation>
+    <operation name="RefundPayment">
+      <input message="tns:RefundPaymentRequest"/>
+      <output message="tns:RefundPaymentResponse"/>
+    </operation>
+    <operation name="GetInvoice">
+      <input message="tns:GetInvoiceRequest"/>
+      <output message="tns:GetInvoiceResponse"/>
+    </operation>
+    <operation name="GenerateInvoice">
+      <input message="tns:GenerateInvoiceRequest"/>
+      <output message="tns:GenerateInvoiceResponse"/>
+    </operation>
+    <operation name="TrackShipment">
+      <input message="tns:TrackShipmentRequest"/>
+      <output message="tns:TrackShipmentResponse"/>
+    </operation>
+    <operation name="ScheduleShipment">
+      <input message="tns:ScheduleShipmentRequest"/>
+      <output message="tns:ScheduleShipmentResponse"/>
+    </operation>
+    <operation name="UpdateShipment">
+      <input message="tns:UpdateShipmentRequest"/>
+      <output message="tns:UpdateShipmentResponse"/>
+    </operation>
+    <operation name="CancelShipment">
+      <input message="tns:CancelShipmentRequest"/>
+      <output message="tns:CancelShipmentResponse"/>
+    </operation>
+  </portType>
+
+  <binding name="TestServiceBinding" type="tns:TestServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="GetCustomer">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/GetCustomer"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="CreateCustomer">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/CreateCustomer"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="UpdateCustomer">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/UpdateCustomer"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="DeleteCustomer">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/DeleteCustomer"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="SearchCustomers">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/SearchCustomers"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="GetOrder">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/GetOrder"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="CreateOrder">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/CreateOrder"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="UpdateOrder">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/UpdateOrder"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="CancelOrder">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/CancelOrder"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="ListOrders">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/ListOrders"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="ProcessPayment">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/ProcessPayment"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="RefundPayment">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/RefundPayment"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="GetInvoice">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/GetInvoice"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="GenerateInvoice">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/GenerateInvoice"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="TrackShipment">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/TrackShipment"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="ScheduleShipment">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/ScheduleShipment"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="UpdateShipment">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/UpdateShipment"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="CancelShipment">
+      <soap:operation soapAction="http://example.com/wsdl/TestService/CancelShipment"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+  </binding>
+
+  <service name="TestService">
+    <port name="TestServicePort" binding="tns:TestServiceBinding">
+      <soap:address location="http://localhost:8080/TestService"/>
+    </port>
+  </service>
+
+</definitions>
